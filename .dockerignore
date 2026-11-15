@@ -1,12 +1,39 @@
+# Git и метаданные
 .git
 .gitignore
+.gitattributes
+
+# Переменные окружения (секреты не должны попасть в образ!)
 .env
 .env.*
 !.env.example
-**/node_modules
-**/__pycache__
+
+# Python кэш
+**/__pycache__/
 **/*.pyc
-**/.venv
-frontend/dist
-frontend/chatbox-ui
+**/*.pyo
+**/.venv/
+.pytest_cache/
+
+# Node.js кэш и старые сборки
+**/node_modules/
+frontend/dist/
+
+data/questions.csv
+
 .old/
+tools/
+cases/
+DeepSeek-Api-Free/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+*.md
+!README.md
+
+presentation.pdf
+*.zip
+solution.zip
+final_submission.zip

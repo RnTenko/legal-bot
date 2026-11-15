@@ -1,13 +1,38 @@
-node_modules
-dist
-dist-ssr
+# Зависимости и сборки
+node_modules/
+dist/
+dist-ssr/
+frontend/dist/
+
+# Переменные окружения
 .env
-.env.local
-.env.*.local
-*.log
+.env.*
+!.env.example
+!.frontend/.env.example
+
+# Кэш и артефакты
+.embcache/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE и система
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+*.log
+*.swp
+
+# Старый мусор и тесты
 .old/
 tools/
+cases/
+DeepSeek-Api-Free/
+tz.md
+data/questions.csv
+
+presentation.pdf
+final_submission.zip
+solution.zip

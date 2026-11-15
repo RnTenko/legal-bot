@@ -78,7 +78,7 @@ export function ChatInput({ onSend, disabled }: Props) {
           disabled={disabled || (!text.trim() && attachments.length === 0)}
           aria-label="Отправить"
         >
-          {disabled ? <span className="spinner" /> : '→'}
+          {disabled ? <span className="spinner" /> : '▶'}
         </button>
       </div>
 
